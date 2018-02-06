@@ -12,5 +12,5 @@ git submodule update
 
 make -j1 initUbuntuPackages  # calls sudo apt-get install; you can always interrupt
 make                         # builds libs and tests
-make runTests
+cd demo; make; ./x.exe       # run the demo
 ```
