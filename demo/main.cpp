@@ -106,6 +106,41 @@ void solveFixed(uint i){
 
 //======================================================================
 
+void example(){
+  uint i=1;
+  mlr::KinematicWorld K(STRING("problem-0"<<i<<".g"));
+  K.optimizeTree();
+  FOL_World L(FILE("fol.g"));
+  initFolStateFromKin(L, K);
+
+  OptLGP lgp(K, L);
+//  lgp.player(); //use this for interactive command-line
+  //set LGP/displayTree = 1 in MT.cfg to see the decision tree
+  lgp.initDisplay();
+
+  lgp.root->optLevel(1);
+  lgp.root->optLevel(2);
+  lgp.root->optLevel(3);
+  lgp.root->expand();
+
+  lgp.displayFocus = lgp.root;
+  lgp.updateDisplay();
+
+  MNode *n = lgp.root->children.last();
+  n->optLevel(1);
+  n->optLevel(2);
+  n->optLevel(3);
+  n->optLevel(1);
+  n->expand();
+
+  lgp.displayFocus = n;
+  lgp.updateDisplay();
+
+  mlr::wait();
+}
+
+//======================================================================
+
 int main(int argc,char **argv){
   mlr::initCmdLine(argc, argv);
   rnd.clockSeed();
@@ -122,6 +157,9 @@ int main(int argc,char **argv){
 
   //compute some specific solutions
   solveFixed(1);
+
+  //low-level example of using the LGP class
+  //example();
 
   return 0;
 }
