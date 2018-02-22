@@ -121,7 +121,7 @@ DecisionRule place2 {
 DecisionRule place3 {
   OBJ, TAB,
   { (animate OBJ) (object OBJ) (held OBJ)! (table TAB) }
-  { (placed OBJ TAB) (busy OBJ)! (on OBJ ANY)! (on OBJ TAB) (INFEASIBLE grasp ANY OBJ)! block(INFEASIBLE grasp ANY OBJ) komo(flagClear OBJ) komo(above OBJ TAB) komo(effSlide TAB OBJ) } #komo(place OBJ TAB)=1. }
+  { (placed OBJ TAB) (animate OBJ)! (busy OBJ)! (on OBJ ANY)! (on OBJ TAB) (INFEASIBLE grasp ANY OBJ)! block(INFEASIBLE grasp ANY OBJ) komo(flagClear OBJ) komo(above OBJ TAB) komo(effSlide TAB OBJ) } #komo(place OBJ TAB)=1. }
 }
 
 #####################################################################
