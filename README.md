@@ -21,3 +21,24 @@ make -j1 initUbuntuPackages  # calls sudo apt-get install; you can always interr
 make                         # builds libs
 cd demo; make; ./x.exe       # run the demo
 ```
+
+If you don't have ssh authorization, try
+```
+git clone https://github.com/MarcToussaint/18-RSS-PhysicalManipulation.git
+cd 18-RSS-PhysicalManipulation
+
+git config --file=.gitmodules submodule.rai.url https://github.com/MarcToussaint/rai.git
+git config --file=.gitmodules submodule.rai-robotModels.url https://github.com/MarcToussaint/rai-robotModels.git
+
+git submodule init
+git submodule update
+
+make -j1 initUbuntuPackages  # calls sudo apt-get install; you can always interrupt
+make                         # builds libs
+cd demo; make; ./x.exe       # run the demo
+```
+
+## Ongoing development
+
+This repo is meant as a snapshot that documents the RSS paper's experiments. Since then, the RAI code and LGP method continuously developed, both to provide cleaner interfaces to collaborators, and in terms of extending the method. Please contact me if you'd like to collaborate using the code and need a simpler access point or interface.
+
