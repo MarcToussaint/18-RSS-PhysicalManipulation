@@ -5,7 +5,7 @@ This repository is a supplement to the paper
 > [Differentiable Physics and Stable Modes for Tool-Use and Manipulation Planning](http://ipvs.informatik.uni-stuttgart.de/mlr/papers/18-toussaint-RSS.pdf).
 > In Proceedings of *Robotics: Science and Systems (R:SS)*, 2018.
 
-Please also see the [supplementary video]() to get an impression on the method.
+Please also see the [supplementary video](https://www.youtube.com/watch?v=-L4tCIGXKBE) to get an impression on the method.
 
 The repository checks out the original commit [18-RSS tag](https://github.com/MarcToussaint/rai/releases/tag/18-RSS) (as submodule) and allows you to reproduce the experiments. Please see the notes at the end on ongoing developments of the core [RAI](https://github.com/MarcToussaint/rai) code, including simpler interfaces for others to use these methods.
 
