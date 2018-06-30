@@ -1,5 +1,11 @@
 # R:SS 2018 paper on Differentiable Physics and Stable Modes for Tool-Use and Manipulation Planning
 
+## Contact me if you're interested using Logic-Geometric Programming yourself!
+
+I'm currently developing nicer (user oriented) interfaces to the code, including python bindings. Please contact me at mtoussai@mit.edu if you're interested being involved, e.g. in testing interfaces and providing feedback how to improve them, or even contributing yourself. I'll setup an Email list on this.
+
+## Description
+
 This repository is a supplement to the paper
 > M. Toussaint, K. R. Allen, K. A. Smith, and J. B. Tenenbaum:
 > [Differentiable Physics and Stable Modes for Tool-Use and Manipulation Planning](http://ipvs.informatik.uni-stuttgart.de/mlr/papers/18-toussaint-RSS.pdf).
