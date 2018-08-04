@@ -2,7 +2,7 @@
 
 ## Contact me if you're interested using Logic-Geometric Programming yourself!
 
-I'm currently developing nicer (user oriented) interfaces to the code, including python bindings. Please contact me at mtoussai@mit.edu if you're interested being involved, e.g. in testing interfaces and providing feedback how to improve them, or even contributing yourself. I'll setup an Email list on this.
+I'm currently developing nicer (user oriented) interfaces to the code, including python bindings. Please register with the "LGP code" mailing list at https://groups.google.com/forum/#!forum/lgp-code or contact me at mtoussai@mit.edu if you're interested being involved, e.g. in testing interfaces and providing feedback how to improve them, or even contributing yourself. 
 
 ## Description
 
@@ -49,5 +49,5 @@ If you need to run in a docker, please have a look at the [docker setup](https:/
 
 ## Ongoing development
 
-This repo is meant as a snapshot that documents the RSS paper's experiments. Since then, the RAI code and LGP method continuously developed, both to provide cleaner interfaces to collaborators, and in terms of extending the method. Please contact me if you'd like to collaborate using the code and need a simpler access point or interface.
+This repo is meant as a snapshot that documents the RSS paper's experiments. Since then, the RAI code and LGP method continuously developed, both to provide cleaner interfaces to collaborators, and in terms of extending the method. Development is mostly going on driven by the python bindings - see https://github.com/MarcToussaint/rai-python .
 
