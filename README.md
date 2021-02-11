@@ -19,13 +19,11 @@ The repository checks out the original commit [18-RSS tag](https://github.com/Ma
 
 On Ubuntu 16.04, and assuming you have ssh authorization with github:
 ```
-git clone git@github.com:MarcToussaint/18-RSS-PhysicalManipulation.git
+git clone --recurse-submodules git@github.com:MarcToussaint/18-RSS-PhysicalManipulation.git
 cd 18-RSS-PhysicalManipulation
-git submodule init
-git submodule update
 
+sudo apt-get install  graphviz graphviz-dev # is missing below (LATER FIX)
 make -j1 initUbuntuPackages  # calls sudo apt-get install; you can always interrupt
-make                         # builds libs
 cd demo; make; ./x.exe       # run the demo
 ```
 
@@ -40,8 +38,8 @@ git config --file=.gitmodules submodule.rai-robotModels.url https://github.com/M
 git submodule init
 git submodule update
 
+sudo apt-get install  graphviz graphviz-dev # is missing below (LATER FIX)
 make -j1 initUbuntuPackages  # calls sudo apt-get install; you can always interrupt
-make                         # builds libs
 cd demo; make; ./x.exe       # run the demo
 ```
 
