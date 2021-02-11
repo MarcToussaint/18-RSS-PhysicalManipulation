@@ -6,7 +6,7 @@
 # etc
 #
 
-OPTIM=fast
+OPTIM=debug # crashed with 'fast' on newer compilers...
 ODE = 0
 PHYSX = 0
 G4 = 0
